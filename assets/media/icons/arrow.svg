@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="10px" height="7px" viewBox="0 0 10 7" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g id="Design" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Dashboard" transform="translate(-387.000000, -207.000000)">
+            <g id="Filters" transform="translate(309.000000, 176.000000)">
+                <g id="Max.$/Trades">
+                    <g id="ic_expand_more_24px" transform="translate(73.000000, 24.000000)">
+                        <polygon id="Shape" points="0 0 20 0 20 20 0 20"></polygon>
+                        <polygon id="Shape" fill="#000000" fill-rule="nonzero" points="13.825 7.15833333 10 10.975 6.175 7.15833333 5 8.33333333 10 13.3333333 15 8.33333333"></polygon>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

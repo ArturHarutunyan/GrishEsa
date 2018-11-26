@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Edit Page</title>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+	
+	<link rel="stylesheet" href="assets/css/bootstrap-4.1.3.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<link rel="stylesheet" href="assets/css/style.css">
+
+	<script src="assets/js/incs/modules/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="assets/js/incs/modules/popper-1.14.3.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+	<script src="assets/js/incs/modules/bootstrap-4.1.3.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+	<script src="assets/js/incs/config.js"></script>
+	<script src="assets/js/incs/functions.js"></script>
+	<script src="assets/js/incs/requestss.js"></script>
+	<script src="assets/js/pages/editInfo.js"></script>
+</head>
+<body>
+	<!-- Header Secton -->
+	<div class="container-fluid edit-p-header">
+					
+		<div class="container position-relative">
+			<h1 class="settings-edit">Account settings</h1>
+			<div class="row">
+				<nav class="ml-5">
+					<a class="back-btn" href="charts.html"><i class="fas fa-long-arrow-alt-left"></i>Go Back</a>
+					<div class="nav nav-tabs ml-5 border-0" id="nav-tab" role="tablist">
+						<a class="nav-item nav-link active" id="nav-info-tab" data-toggle="tab" href="#info" role="tab" aria-controls="nav-info" aria-selected="true">Personal Information</a>
+						<a class="nav-item nav-link" id="nav-email-tab" data-toggle="tab" href="#email" role="tab" aria-controls="nav-email" aria-selected="false">Email and Password</a>
+						<!--<a class="nav-item nav-link" id="nav-notif-tab" data-toggle="tab" href="#notif" role="tab" aria-controls="nav-notif" aria-selected="false">Notifications</a>-->
+					</div>
+				</nav>     
+			</div>
+		</div>
+	</div>
+	<!-- Header section End -->
+	<!-- Edit info page sect -->
+			<div class="mt-8 tab-content" id="nav-tabContent">
+				<div class="tab-pane fade show active" id="info" role="tabpanel" aria-labelledby="nav-info-tab">
+					<div class="container">
+						<div class="row justify-content-end">
+							<div class="col-lg-4 capt-edit">
+								<h1>Contact Information</h1>
+								<p>Your contact information is strictly private, visible only to you and to admins.</p>
+							</div>
+							<div class="col-lg-4 inp-bl-edit">
+								<p id="RequiredFields" class="errorDescription">*Required field<span id="fieldS" style="display: none">s</span></p>
+								<p style="display: none" class="sucess" id="successBlock">Your info is updated</p>
+								<div id="FullNameBlock">
+									<label class="mt-0" for="FullName">Full name</label>
+									<input id="FullName" type="text">
+								</div>
+								<div id="AddressBlock">
+									<label for="Address">Address</label>
+									<input id="Address" type="text">
+								</div>
+								<div id="cityBlock">
+									<label for="city">City / Town</label>
+									<input id="city" type="text">
+								</div>
+								<div id="PostcodeBlock">
+									<label for="postcode">Postcode / ZIP</label>
+									<input id="postcode" type="text">
+								</div>
+								<div id="PhoneBlock">
+									<label for="phone">Phone</label>
+									<input id="phone" type="text">
+								</div>
+							</div>
+							<div class="col-lg-4 inp-bl-edit">
+								<div id="Address2Block">
+									<label class="mt-0" for="Address2">Address line2</label>
+									<input id="Address2" type="text">
+								</div>
+								<div id="StateBlock">
+									<label for="state">State / County / Province</label>
+									<input id="State" type="text">
+								</div>
+								<div id="CountryBlock">
+									<label for="Country">Country</label>
+									<select name="" id="Country">
+										<option></option>
+										<option value="Afghanistan" > Afghanistan</option><option value="Albania" > Albania</option><option value="Algeria" > Algeria</option><option value="Andorra" > Andorra</option><option value="Angola" > Angola</option><option value="Anguilla" > Anguilla</option><option value="Antigua & Barbuda" > Antigua & Barbuda</option><option value="Argentina" > Argentina</option><option value="Armenia" > Armenia</option><option value="Australia" > Australia</option><option value="Austria" > Austria</option><option value="Azerbaijan" > Azerbaijan</option><option value="Bahamas" > Bahamas</option><option value="Bahrain" > Bahrain</option><option value="Bangladesh" > Bangladesh</option><option value="Barbados" > Barbados</option><option value="Belarus" > Belarus</option><option value="Belgium" > Belgium</option><option value="Belize" > Belize</option><option value="Benin" > Benin</option><option value="Bermuda" > Bermuda</option><option value="Bhutan" > Bhutan</option><option value="Bolivia" > Bolivia</option><option value="Bosnia & Herzegovina" > Bosnia & Herzegovina</option><option value="Botswana" > Botswana</option><option value="Brazil" > Brazil</option><option value="Brunei Darussalam" > Brunei Darussalam</option><option value="Bulgaria" > Bulgaria</option><option value="Burkina Faso" > Burkina Faso</option><option value="Burundi" > Burundi</option><option value="Cambodia" > Cambodia</option><option value="Cameroon" > Cameroon</option><option value="Canada" > Canada</option><option value="Cape Verde" > Cape Verde</option><option value="Cayman Islands" > Cayman Islands</option><option value="Central African Republic" > Central African Republic</option><option value="Chad" > Chad</option><option value="Chile" > Chile</option><option value="China" > China</option><option value="China - Hong Kong / Macau" > China - Hong Kong / Macau</option><option value="Colombia" > Colombia</option><option value="Comoros" > Comoros</option><option value="Congo" > Congo</option><option value="Congo, Democratic Republic of (DRC)" > Congo, Democratic Republic of (DRC)</option><option value="Costa Rica" > Costa Rica</option><option value="Croatia" > Croatia</option><option value="Cuba" > Cuba</option><option value="Cyprus" > Cyprus</option><option value="Czech Republic" > Czech Republic</option><option value="Denmark" > Denmark</option><option value="Djibouti" > Djibouti</option><option value="Dominica" > Dominica</option><option value="Dominican Republic" > Dominican Republic</option><option value="Ecuador" > Ecuador</option><option value="Egypt" > Egypt</option><option value="El Salvador" > El Salvador</option><option value="Equatorial Guinea" > Equatorial Guinea</option><option value="Eritrea" > Eritrea</option><option value="Estonia" > Estonia</option><option value="Ethiopia" > Ethiopia</option><option value="Fiji" > Fiji</option><option value="Finland" > Finland</option><option value="France" > France</option><option value="French Guiana" > French Guiana</option><option value="Gabon" > Gabon</option><option value="Gambia" > Gambia</option><option value="Georgia" > Georgia</option><option value="Germany" > Germany</option><option value="Ghana" > Ghana</option><option value="Great Britain" > Great Britain</option><option value="Greece" > Greece</option><option value="Grenada" > Grenada</option><option value="Guadeloupe" > Guadeloupe</option><option value="Guatemala" > Guatemala</option><option value="Guinea" > Guinea</option><option value="Guinea-Bissau" > Guinea-Bissau</option><option value="Guyana" > Guyana</option><option value="Haiti" > Haiti</option><option value="Honduras" > Honduras</option><option value="Hungary" > Hungary</option><option value="Iceland" > Iceland</option><option value="India" > India</option><option value="Indonesia" > Indonesia</option><option value="Iran" > Iran</option><option value="Iraq" > Iraq</option><option value="Israel and the Occupied Territories" > Israel and the Occupied Territories</option><option value="Italy" > Italy</option><option value="Ivory Coast (Cote d'Ivoire)" > Ivory Coast (Cote d'Ivoire)</option><option value="Jamaica" > Jamaica</option><option value="Japan" > Japan</option><option value="Jordan" > Jordan</option><option value="Kazakhstan" > Kazakhstan</option><option value="Kenya" > Kenya</option><option value="Korea, Democratic Republic of (North Korea)" > Korea, Democratic Republic of (North Korea)</option><option value="Korea, Republic of (South Korea)" > Korea, Republic of (South Korea)</option><option value="Kosovo" > Kosovo</option><option value="Kuwait" > Kuwait</option><option value="Kyrgyz Republic (Kyrgyzstan)" > Kyrgyz Republic (Kyrgyzstan)</option><option value="Laos" > Laos</option><option value="Latvia" > Latvia</option><option value="Lebanon" > Lebanon</option><option value="Lesotho" > Lesotho</option><option value="Liberia" > Liberia</option><option value="Libya" > Libya</option><option value="Liechtenstein" > Liechtenstein</option><option value="Lithuania" > Lithuania</option><option value="Luxembourg" > Luxembourg</option><option value="Macedonia, Republic of" > Macedonia, Republic of</option><option value="Madagascar" > Madagascar</option><option value="Malawi" > Malawi</option><option value="Malaysia" > Malaysia</option><option value="Maldives" > Maldives</option><option value="Mali" > Mali</option><option value="Malta" > Malta</option><option value="Martinique" > Martinique</option><option value="Mauritania" > Mauritania</option><option value="Mauritius" > Mauritius</option><option value="Mayotte" > Mayotte</option><option value="Mexico" > Mexico</option><option value="Moldova, Republic of" > Moldova, Republic of</option><option value="Monaco" > Monaco</option><option value="Mongolia" > Mongolia</option><option value="Montenegro" > Montenegro</option><option value="Montserrat" > Montserrat</option><option value="Morocco" > Morocco</option><option value="Mozambique" > Mozambique</option><option value="Myanmar/Burma" > Myanmar/Burma</option><option value="Namibia" > Namibia</option><option value="Nepal" > Nepal</option><option value="New Zealand" > New Zealand</option><option value="Nicaragua" > Nicaragua</option><option value="Niger" > Niger</option><option value="Nigeria" > Nigeria</option><option value="Norway" > Norway</option><option value="Oman" > Oman</option><option value="Pacific Islands" > Pacific Islands</option><option value="Pakistan" > Pakistan</option><option value="Panama" > Panama</option><option value="Papua New Guinea" > Papua New Guinea</option><option value="Paraguay" > Paraguay</option><option value="Peru" > Peru</option><option value="Philippines" > Philippines</option><option value="Poland" > Poland</option><option value="Portugal" > Portugal</option><option value="Puerto Rico" > Puerto Rico</option><option value="Qatar" > Qatar</option><option value="Reunion" > Reunion</option><option value="Romania" > Romania</option><option value="Russian Federation" > Russian Federation</option><option value="Rwanda" > Rwanda</option><option value="Saint Kitts and Nevis" > Saint Kitts and Nevis</option><option value="Saint Lucia" > Saint Lucia</option><option value="Saint Vincent and the Grenadines" > Saint Vincent and the Grenadines</option><option value="Samoa" > Samoa</option><option value="Sao Tome and Principe" > Sao Tome and Principe</option><option value="Saudi Arabia" > Saudi Arabia</option><option value="Senegal" > Senegal</option><option value="Serbia" > Serbia</option><option value="Seychelles" > Seychelles</option><option value="Sierra Leone" > Sierra Leone</option><option value="Singapore" > Singapore</option><option value="Slovak Republic (Slovakia)" > Slovak Republic (Slovakia)</option><option value="Slovenia" > Slovenia</option><option value="Solomon Islands" > Solomon Islands</option><option value="Somalia" > Somalia</option><option value="South Africa" > South Africa</option><option value="South Sudan" > South Sudan</option><option value="Spain" > Spain</option><option value="Sri Lanka" > Sri Lanka</option><option value="Sudan" > Sudan</option><option value="Suriname" > Suriname</option><option value="Swaziland" > Swaziland</option><option value="Sweden" > Sweden</option><option value="Switzerland" > Switzerland</option><option value="Syria" > Syria</option><option value="Tajikistan" > Tajikistan</option><option value="Tanzania" > Tanzania</option><option value="Thailand" > Thailand</option><option value="Netherlands" > Netherlands</option><option value="Timor Leste" > Timor Leste</option><option value="Togo" > Togo</option><option value="Trinidad & Tobago" > Trinidad & Tobago</option><option value="Tunisia" > Tunisia</option><option value="Turkey" > Turkey</option><option value="Turkmenistan" > Turkmenistan</option><option value="Turks & Caicos Islands" > Turks & Caicos Islands</option><option value="Uganda" > Uganda</option><option value="Ukraine" > Ukraine</option><option value="United Arab Emirates" > United Arab Emirates</option><option value="United States of America (USA)" > United States of America (USA)</option><option value="Uruguay" > Uruguay</option><option value="Uzbekistan" > Uzbekistan</option><option value="Venezuela" > Venezuela</option><option value="Vietnam" > Vietnam</option><option value="Virgin Islands (UK)" > Virgin Islands (UK)</option><option value="Virgin Islands (US)" > Virgin Islands (US)</option><option value="Yemen" > Yemen</option><option value="Zambia" > Zambia</option><option value="Zimbabwe" > Zimbabwe</option>
+
+									</select>
+								</div>
+								<div id="TimeZoneBlock">
+									<label for="TimeZone">Time zone</label>
+									<select name="" id="TimeZone">
+										<option></option>
+										<option value="(UTC-12:00) International Date Line West">(UTC-12:00) International Date Line West</option><option value="(UTC-11:00) Coordinated Universal Time-11">(UTC-11:00) Coordinated Universal Time-11</option><option value="(UTC-10:00) Hawaii">(UTC-10:00) Hawaii</option><option value="(UTC-09:00) Alaska">(UTC-09:00) Alaska</option><option value="(UTC-08:00) Baja California">(UTC-08:00) Baja California</option><option value="(UTC-07:00) Pacific Time (US & Canada)">(UTC-07:00) Pacific Time (US & Canada)</option><option value="(UTC-08:00) Pacific Time (US & Canada)">(UTC-08:00) Pacific Time (US & Canada)</option><option value="(UTC-07:00) Arizona">(UTC-07:00) Arizona</option><option value="(UTC-07:00) Chihuahua, La Paz, Mazatlan">(UTC-07:00) Chihuahua, La Paz, Mazatlan</option><option value="(UTC-07:00) Mountain Time (US & Canada)">(UTC-07:00) Mountain Time (US & Canada)</option><option value="(UTC-06:00) Central America">(UTC-06:00) Central America</option><option value="(UTC-06:00) Central Time (US & Canada)">(UTC-06:00) Central Time (US & Canada)</option><option value="(UTC-06:00) Guadalajara, Mexico City, Monterrey">(UTC-06:00) Guadalajara, Mexico City, Monterrey</option><option value="(UTC-06:00) Saskatchewan">(UTC-06:00) Saskatchewan</option><option value="(UTC-05:00) Bogota, Lima, Quito">(UTC-05:00) Bogota, Lima, Quito</option><option value="(UTC-05:00) Eastern Time (US & Canada)">(UTC-05:00) Eastern Time (US & Canada)</option><option value="(UTC-05:00) Indiana (East)">(UTC-05:00) Indiana (East)</option><option value="(UTC-04:30) Caracas">(UTC-04:30) Caracas</option><option value="(UTC-04:00) Asuncion">(UTC-04:00) Asuncion</option><option value="(UTC-04:00) Atlantic Time (Canada)">(UTC-04:00) Atlantic Time (Canada)</option><option value="(UTC-04:00) Cuiaba">(UTC-04:00) Cuiaba</option><option value="(UTC-04:00) Georgetown, La Paz, Manaus, San Juan">(UTC-04:00) Georgetown, La Paz, Manaus, San Juan</option><option value="(UTC-04:00) Santiago">(UTC-04:00) Santiago</option><option value="(UTC-03:30) Newfoundland">(UTC-03:30) Newfoundland</option><option value="(UTC-03:00) Brasilia">(UTC-03:00) Brasilia</option><option value="(UTC-03:00) Buenos Aires">(UTC-03:00) Buenos Aires</option><option value="(UTC-03:00) Cayenne, Fortaleza">(UTC-03:00) Cayenne, Fortaleza</option><option value="(UTC-03:00) Greenland">(UTC-03:00) Greenland</option><option value="(UTC-03:00) Montevideo">(UTC-03:00) Montevideo</option><option value="(UTC-03:00) Salvador">(UTC-03:00) Salvador</option><option value="(UTC-02:00) Coordinated Universal Time-02">(UTC-02:00) Coordinated Universal Time-02</option><option value="(UTC-02:00) Mid-Atlantic - Old">(UTC-02:00) Mid-Atlantic - Old</option><option value="(UTC-01:00) Azores">(UTC-01:00) Azores</option><option value="(UTC-01:00) Cape Verde Is.">(UTC-01:00) Cape Verde Is.</option><option value="(UTC) Casablanca">(UTC) Casablanca</option><option value="(UTC) Coordinated Universal Time">(UTC) Coordinated Universal Time</option><option value="(UTC) Edinburgh, London">(UTC) Edinburgh, London</option><option value="(UTC+01:00) Edinburgh, London">(UTC+01:00) Edinburgh, London</option><option value="(UTC) Dublin, Lisbon">(UTC) Dublin, Lisbon</option><option value="(UTC) Monrovia, Reykjavik">(UTC) Monrovia, Reykjavik</option><option value="(UTC+01:00) Amsterdam, Berlin, Bern, Rome, Stockholm, Vienna">(UTC+01:00) Amsterdam, Berlin, Bern, Rome, Stockholm, Vienna</option><option value="(UTC+01:00) Belgrade, Bratislava, Budapest, Ljubljana, Prague">(UTC+01:00) Belgrade, Bratislava, Budapest, Ljubljana, Prague</option><option value="(UTC+01:00) Brussels, Copenhagen, Madrid, Paris">(UTC+01:00) Brussels, Copenhagen, Madrid, Paris</option><option value="(UTC+01:00) Sarajevo, Skopje, Warsaw, Zagreb">(UTC+01:00) Sarajevo, Skopje, Warsaw, Zagreb</option><option value="(UTC+01:00) West Central Africa">(UTC+01:00) West Central Africa</option><option value="(UTC+01:00) Windhoek">(UTC+01:00) Windhoek</option><option value="(UTC+02:00) Athens, Bucharest">(UTC+02:00) Athens, Bucharest</option><option value="(UTC+02:00) Beirut">(UTC+02:00) Beirut</option><option value="(UTC+02:00) Cairo">(UTC+02:00) Cairo</option><option value="(UTC+02:00) Damascus">(UTC+02:00) Damascus</option><option value="(UTC+02:00) E. Europe">(UTC+02:00) E. Europe</option><option value="(UTC+02:00) Harare, Pretoria">(UTC+02:00) Harare, Pretoria</option><option value="(UTC+02:00) Helsinki, Kyiv, Riga, Sofia, Tallinn, Vilnius">(UTC+02:00) Helsinki, Kyiv, Riga, Sofia, Tallinn, Vilnius</option><option value="(UTC+03:00) Istanbul">(UTC+03:00) Istanbul</option><option value="(UTC+02:00) Jerusalem">(UTC+02:00) Jerusalem</option><option value="(UTC+02:00) Tripoli">(UTC+02:00) Tripoli</option><option value="(UTC+03:00) Amman">(UTC+03:00) Amman</option><option value="(UTC+03:00) Baghdad">(UTC+03:00) Baghdad</option><option value="(UTC+03:00) Kaliningrad, Minsk">(UTC+03:00) Kaliningrad, Minsk</option><option value="(UTC+03:00) Kuwait, Riyadh">(UTC+03:00) Kuwait, Riyadh</option><option value="(UTC+03:00) Nairobi">(UTC+03:00) Nairobi</option><option value="(UTC+03:00) Moscow, St. Petersburg, Volgograd">(UTC+03:00) Moscow, St. Petersburg, Volgograd</option><option value="(UTC+04:00) Samara, Ulyanovsk, Saratov">(UTC+04:00) Samara, Ulyanovsk, Saratov</option><option value="(UTC+03:30) Tehran">(UTC+03:30) Tehran</option><option value="(UTC+04:00) Abu Dhabi, Muscat">(UTC+04:00) Abu Dhabi, Muscat</option><option value="(UTC+04:00) Baku">(UTC+04:00) Baku</option><option value="(UTC+04:00) Port Louis">(UTC+04:00) Port Louis</option><option value="(UTC+04:00) Tbilisi">(UTC+04:00) Tbilisi</option><option value="(UTC+04:00) Yerevan">(UTC+04:00) Yerevan</option><option value="(UTC+04:30) Kabul">(UTC+04:30) Kabul</option><option value="(UTC+05:00) Ashgabat, Tashkent">(UTC+05:00) Ashgabat, Tashkent</option><option value="(UTC+05:00) Yekaterinburg">(UTC+05:00) Yekaterinburg</option><option value="(UTC+05:00) Islamabad, Karachi">(UTC+05:00) Islamabad, Karachi</option><option value="(UTC+05:30) Chennai, Kolkata, Mumbai, New Delhi">(UTC+05:30) Chennai, Kolkata, Mumbai, New Delhi</option><option value="(UTC+05:30) Sri Jayawardenepura">(UTC+05:30) Sri Jayawardenepura</option><option value="(UTC+05:45) Kathmandu">(UTC+05:45) Kathmandu</option><option value="(UTC+06:00) Astana">(UTC+06:00) Astana</option><option value="(UTC+06:00) Dhaka">(UTC+06:00) Dhaka</option><option value="(UTC+06:30) Yangon (Rangoon)">(UTC+06:30) Yangon (Rangoon)</option><option value="(UTC+07:00) Bangkok, Hanoi, Jakarta">(UTC+07:00) Bangkok, Hanoi, Jakarta</option><option value="(UTC+07:00) Novosibirsk">(UTC+07:00) Novosibirsk</option><option value="(UTC+08:00) Beijing, Chongqing, Hong Kong, Urumqi">(UTC+08:00) Beijing, Chongqing, Hong Kong, Urumqi</option><option value="(UTC+08:00) Krasnoyarsk">(UTC+08:00) Krasnoyarsk</option><option value="(UTC+08:00) Kuala Lumpur, Singapore">(UTC+08:00) Kuala Lumpur, Singapore</option><option value="(UTC+08:00) Perth">(UTC+08:00) Perth</option><option value="(UTC+08:00) Taipei">(UTC+08:00) Taipei</option><option value="(UTC+08:00) Ulaanbaatar">(UTC+08:00) Ulaanbaatar</option><option value="(UTC+09:00) Irkutsk">(UTC+09:00) Irkutsk</option><option value="(UTC+09:00) Osaka, Sapporo, Tokyo">(UTC+09:00) Osaka, Sapporo, Tokyo</option><option value="(UTC+09:00) Seoul">(UTC+09:00) Seoul</option><option value="(UTC+09:30) Adelaide">(UTC+09:30) Adelaide</option><option value="(UTC+09:30) Darwin">(UTC+09:30) Darwin</option><option value="(UTC+10:00) Brisbane">(UTC+10:00) Brisbane</option><option value="(UTC+10:00) Canberra, Melbourne, Sydney">(UTC+10:00) Canberra, Melbourne, Sydney</option><option value="(UTC+10:00) Guam, Port Moresby">(UTC+10:00) Guam, Port Moresby</option><option value="(UTC+10:00) Hobart">(UTC+10:00) Hobart</option><option value="(UTC+10:00) Yakutsk">(UTC+10:00) Yakutsk</option><option value="(UTC+11:00) Solomon Is., New Caledonia">(UTC+11:00) Solomon Is., New Caledonia</option><option value="(UTC+11:00) Vladivostok">(UTC+11:00) Vladivostok</option><option value="(UTC+12:00) Auckland, Wellington">(UTC+12:00) Auckland, Wellington</option><option value="(UTC+12:00) Coordinated Universal Time+12">(UTC+12:00) Coordinated Universal Time+12</option><option value="(UTC+12:00) Fiji">(UTC+12:00) Fiji</option><option value="(UTC+12:00) Magadan">(UTC+12:00) Magadan</option><option value="(UTC+12:00) Petropavlovsk-Kamchatsky - Old">(UTC+12:00) Petropavlovsk-Kamchatsky - Old</option><option value="(UTC+13:00) Nuku'alofa">(UTC+13:00) Nuku'alofa</option><option value="(UTC+13:00) Samoa">(UTC+13:00) Samoa</option>
+									</select>
+								</div>
+							</div>
+							<div class="col-lg-8 mt-1">
+								<input class="save-changes" id="SaveChanges" type="submit" value="Save">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="tab-pane fade" id="email" role="tabpanel" aria-labelledby="nav-email-tab">
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-4 frst-tab-edit">
+								<div>
+									<h2>Email</h2>
+								</div>
+								<div class="pwd-sect-bl">
+									<h2>Password</h2>
+									<p>Tips for secure password</p>
+									<ul class="pwd-sect">
+										<li>
+											Use a mix of letters, numbers and symbols
+										</li>
+										<li>
+											Don't use personal information or common words
+										</li>
+										<li>
+											Make it long - the longer the better. We require a minimum of 12 characters.
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="col-lg-6">
+								<div class="mail-p-main">
+									<p id="RequiredFieldsInEmailChange" class="errorDescription">*This field<span id="NewEmailRequiredfieldS" style="display: none">s</span> are required</p>
+									<p style="display:none" class="errorDescription" id="EmailFormatError">* This is Not Email</p>
+									<p style="display: none" class="sucess" id="EmailChangeSuccessBlock">Your info is updated</p>
+									<p id="errordMessage" style="display: none" class="errorDescription"></p>
+									<p id="success" style="display: none" class="sucess">Success</p>
+									<div id="NewEmailBlock">
+										<label for="NewEmail">Email</label>
+										<input type="text" id="NewEmail">
+									</div>
+									<div id="PasswordBlock">
+										<label for="password">Enter your password to confirm change</label>
+										<input type="password" id="password">
+									</div>
+									<div>
+									<input id="changeEmail" class="change-email-add" type="submit" value="Change email address">
+									</div>
+								</div>
+								<div class="password-p-main mt-5">
+									<p id="RequiredFieldsInPasswordChange" class="errorDescription">*This field<span id="PasswordsAreDefferentS" style="display: none">s</span> are required</p>
+									<p style="display:none" class="errorDescription" id="PasswordsAreDefferent">* New passwords don't match</p>
+									<p style="display: none" class="sucess" id="PasswordChangeSuccess">Your password successfully changed</p>
+									<p style="display: none;" class="errorDescription" id = "PasswordChangeWrongProcess"></p>
+
+									<div id="CurrentPasswordBlock">
+										<label for="CurrentPassword">Current password</label>
+										<input id="CurrentPassword" type="password">
+									</div>
+									<div id="NewPasswordBlock">
+										<label for="NewPassword">New password</label>
+										<input id="NewPassword" type="password">
+									</div>
+									<div id = "RepeatNewPasswordBlock">
+										<label for="RepeatNewPassword">Repeat new password</label>
+										<input id="RepeatNewPassword" type="password">
+									</div>
+									<div>
+									<input id="ChangePassword" class="change-email-add" type="submit" value="Change password">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!--<div class="tab-pane fade" id="notif" role="tabpanel" aria-labelledby="nav-notif-tab">
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-4 frst-tab-edit">
+								<h2>Website</h2>
+							</div>
+							<div class="col-lg-4 alert-rem">
+								<p>Alerts and reminders</p>
+								<span>On</span>
+							</div>
+						</div>
+						<div class="row bord-edit"></div>
+						<div class="row justify-content-end">
+							<div class="col-lg-4 frst-tab-edit">
+								<h2>Emails</h2>
+							</div>
+							<div class="col-lg-4 alert-rem">
+								<p>Alerts</p>
+								<span>Instant</span>
+								<label for="">New designs recived</label>
+								<select name="" id="">
+									<option value="">Periodically</option>
+									<option value="">Periodically</option>
+									<option value="">Periodically</option>
+									<option value="">Periodically</option>
+								</select>
+							</div>
+							<div class="col-lg-4 alert-rema">
+								<span>E.g. new invoice received, payment released, etc.</span>
+							</div>
+							<div class="col-lg-8 mt-1">
+								<input class="save-changes" type="submit" value="Save changes">
+							</div>
+						</div>
+						</div>
+					</div>
+				</div>-->
+			</div>
+	<!-- Edit info page sect end -->
+   
+
+</body>
+</html>

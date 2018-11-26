@@ -1,0 +1,8 @@
+<a href="mailto:connect@saw-capital.com">Send email</a>
+for Simon check trades order by field
+
+/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --disable-web-security --user-data-dir="/Applications/Google"
+
+
+	- chart.html selects
+	- Simon Please send company full name in trades query

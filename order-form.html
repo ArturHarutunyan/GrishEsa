@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Order Form page</title>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+	
+	<link rel="stylesheet" href="assets/css/bootstrap-4.1.3.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<link rel="stylesheet" href="assets/css/style.css">
+
+	<script src="assets/js/incs/modules/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="assets/js/incs/modules/popper-1.14.3.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+	<script src="assets/js/incs/modules/bootstrap-4.1.3.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+	<script src="assets/js/incs/modules/simplebar.min.js" type="text/javascript"></script>
+	<script src="assets/js/incs/config.js"></script>
+	<script src="assets/js/incs/functions.js"></script>
+	<script src="assets/js/incs/requestss.js"></script>
+	<script src="assets/js/pages/OrderForm.js"></script>
+</head>
+<body>
+	<!-- Header Secton -->
+	<div class="container-fluid header">
+		<div class="row">
+			<nav>
+				<a class="logo-cont" href="charts.html"><img src="assets/media/images/log.png" alt=""></a>
+				<div class="header-drp dropdown">
+				<a class="btn btn-secondary dropdown-toggle head-drp"  href='#' role='button' id="dropdownMenuLink " data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						<svg width="18px" height="9px" viewBox="0 0 18 9" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+							<!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+							<desc>Created with Sketch.</desc>
+							<defs></defs>
+							<g id="Design" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+								<g id="My-profile" transform="translate(-1251.000000, -40.000000)">
+									<g id="Upper-navigation">
+										<g id="Profile" transform="translate(1240.000000, 12.000000)">
+											<g id="outline-arrow_drop_down-24px" transform="translate(0.000000, 12.000000)">
+												<g id="Outline_1_">
+													<polygon id="Shape" points="0 0 40 0 40 40 0 40"></polygon>
+													<polygon id="Shape" fill="#FFFFFF" fill-rule="nonzero" points="11.6666667 16.6666667 20 25 28.3333333 16.6666667"></polygon>
+												</g>
+											</g>
+										</g>
+									</g>
+								</g>
+							</g>
+						</svg>
+
+					<span id="UserName"></span>
+					</a>
+					<div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+							<a class="dropdown-item drp-men" href="edit-info.html">
+									<i class="fas fa-cogs"></i>
+								Account Settings</a>
+							<a class="dropdown-item drp-men" href="profile.html"><i class="fas fa-user"></i>Profile</a>
+							<a class="dropdown-item drp-men" href="profile.html"><i class="fas fa-calculator"></i>Transactions</a>
+							<a class="dropdown-item log-btn-head drp-men logoutBTN" href="index.html"><i class="fas fa-sign-out-alt"></i>Log Out</a>
+						</div>
+				</div>
+			</nav>
+		</div>
+	</div>
+	<!-- Header section End -->
+	<!-- order form page sect -->
+	<div class="full-cont">
+		<div class="sm-part">
+			<ul class="menu-main-cont">
+				<li>                    
+
+					<a href="charts.html">                    
+						<svg width="18px" height="18px" viewBox="0 0 18 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+						<!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+						<desc>Created with Sketch.</desc>
+						<defs></defs>
+						<g id="Design" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+							<g id="My-profile" transform="translate(-43.000000, -156.000000)">
+								<g id="Side-navigation" transform="translate(-2.000000, 1.000000)">
+									<g id="Dashboard_selected" transform="translate(42.000000, 152.000000)">
+										<g id="baseline-dashboard-32px">
+											<polygon id="Shape" points="0 0 24 0 24 24 0 24"></polygon>
+											<path d="M3,13 L11,13 L11,3 L3,3 L3,13 Z M3,21 L11,21 L11,15 L3,15 L3,21 Z M13,21 L21,21 L21,11 L13,11 L13,21 Z M13,3 L13,9 L21,9 L21,3 L13,3 Z" id="Shape" fill="#1B3855" fill-rule="nonzero"></path>
+										</g>
+									</g>
+								</g>
+							</g>
+						</g>
+					</svg>Dashboard</a>
+				</li>
+				<li  class="active">
+					
+					<a href="#">
+						<svg width="18px" height="14px" viewBox="0 0 18 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+						<!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+						<desc>Created with Sketch.</desc>
+						<defs></defs>
+						<g id="Design" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+							<g id="My-profile" transform="translate(-42.000000, -222.000000)">
+								<g id="Side-navigation" transform="translate(-2.000000, 1.000000)">
+									<g id="Orders" transform="translate(1.000000, 200.000000)">
+										<g id="outline-reorder-24px" transform="translate(40.000000, 16.000000)">
+											<g id="Outline">
+												<polygon id="Shape" points="0 0 24 0 24 24 0 24"></polygon>
+												<path d="M3,15 L21,15 L21,13 L3,13 L3,15 Z M3,19 L21,19 L21,17 L3,17 L3,19 Z M3,11 L21,11 L21,9 L3,9 L3,11 Z M3,5 L3,7 L21,7 L21,5 L3,5 Z" id="Shape" fill="#1B3855" fill-rule="nonzero"></path>
+											</g>
+										</g>
+									</g>
+								</g>
+							</g>
+						</g>
+					</svg>Manual Orders</a>
+				</li>
+				<li>
+					
+					<a href="edit-info.html">
+						<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+						<!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+						<desc>Created with Sketch.</desc>
+						<defs></defs>
+						<g id="Design" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+							<g id="My-profile" transform="translate(-41.000000, -283.000000)">
+								<g id="Side-navigation" transform="translate(-2.000000, 1.000000)">
+									<g id="Settings" transform="translate(1.000000, 264.000000)">
+										<g id="outline-settings-24px" transform="translate(40.000000, 16.000000)">
+											<polygon id="Shape" points="0 0 24 0 24 24 0 24"></polygon>
+											<g id="Group" transform="translate(2.000000, 2.000000)" fill="#1B3855" fill-rule="nonzero">
+												<path d="M17.43,10.98 C17.47,10.66 17.5,10.34 17.5,10 C17.5,9.66 17.47,9.34 17.43,9.02 L19.54,7.37 C19.73,7.22 19.78,6.95 19.66,6.73 L17.66,3.27 C17.57,3.11 17.4,3.02 17.22,3.02 C17.16,3.02 17.1,3.03 17.05,3.05 L14.56,4.05 C14.04,3.65 13.48,3.32 12.87,3.07 L12.49,0.42 C12.46,0.18 12.25,0 12,0 L8,0 C7.75,0 7.54,0.18 7.51,0.42 L7.13,3.07 C6.52,3.32 5.96,3.66 5.44,4.05 L2.95,3.05 C2.89,3.03 2.83,3.02 2.77,3.02 C2.6,3.02 2.43,3.11 2.34,3.27 L0.34,6.73 C0.21,6.95 0.27,7.22 0.46,7.37 L2.57,9.02 C2.53,9.34 2.5,9.67 2.5,10 C2.5,10.33 2.53,10.66 2.57,10.98 L0.46,12.63 C0.27,12.78 0.22,13.05 0.34,13.27 L2.34,16.73 C2.43,16.89 2.6,16.98 2.78,16.98 C2.84,16.98 2.9,16.97 2.95,16.95 L5.44,15.95 C5.96,16.35 6.52,16.68 7.13,16.93 L7.51,19.58 C7.54,19.82 7.75,20 8,20 L12,20 C12.25,20 12.46,19.82 12.49,19.58 L12.87,16.93 C13.48,16.68 14.04,16.34 14.56,15.95 L17.05,16.95 C17.11,16.97 17.17,16.98 17.23,16.98 C17.4,16.98 17.57,16.89 17.66,16.73 L19.66,13.27 C19.78,13.05 19.73,12.78 19.54,12.63 L17.43,10.98 Z M15.45,9.27 C15.49,9.58 15.5,9.79 15.5,10 C15.5,10.21 15.48,10.43 15.45,10.73 L15.31,11.86 L16.2,12.56 L17.28,13.4 L16.58,14.61 L15.31,14.1 L14.27,13.68 L13.37,14.36 C12.94,14.68 12.53,14.92 12.12,15.09 L11.06,15.52 L10.9,16.65 L10.7,18 L9.3,18 L9.11,16.65 L8.95,15.52 L7.89,15.09 C7.46,14.91 7.06,14.68 6.66,14.38 L5.75,13.68 L4.69,14.11 L3.42,14.62 L2.72,13.41 L3.8,12.57 L4.69,11.87 L4.55,10.74 C4.52,10.43 4.5,10.2 4.5,10 C4.5,9.8 4.52,9.57 4.55,9.27 L4.69,8.14 L3.8,7.44 L2.72,6.6 L3.42,5.39 L4.69,5.9 L5.73,6.32 L6.63,5.64 C7.06,5.32 7.47,5.08 7.88,4.91 L8.94,4.48 L9.1,3.35 L9.3,2 L10.69,2 L10.88,3.35 L11.04,4.48 L12.1,4.91 C12.53,5.09 12.93,5.32 13.33,5.62 L14.24,6.32 L15.3,5.89 L16.57,5.38 L17.27,6.59 L16.2,7.44 L15.31,8.14 L15.45,9.27 Z" id="Shape"></path>
+												<path d="M10,6 C7.79,6 6,7.79 6,10 C6,12.21 7.79,14 10,14 C12.21,14 14,12.21 14,10 C14,7.79 12.21,6 10,6 Z M10,12 C8.9,12 8,11.1 8,10 C8,8.9 8.9,8 10,8 C11.1,8 12,8.9 12,10 C12,11.1 11.1,12 10,12 Z" id="Shape"></path>
+											</g>
+										</g>
+									</g>
+								</g>
+							</g>
+						</g>
+					</svg>Settings</a></li>
+			</ul>
+			<div>
+					<a href="mailto:connect@saw-capital.com" class="support-block">
+						<span>
+							<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+								<!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+								<desc>Created with Sketch.</desc>
+								<defs></defs>
+								<g id="Design" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+									<g id="Order-form" transform="translate(-55.000000, -793.000000)" fill="#FFFFFF" fill-rule="nonzero">
+										<g id="Side-navigation" transform="translate(0.000000, 1.000000)">
+											<g id="Support" transform="translate(40.000000, 776.000000)">
+												<path d="M33,16 L17,16 C15.9,16 15,16.9 15,18 L15,36 L19,32 L33,32 C34.1,32 35,31.1 35,30 L35,18 C35,16.9 34.1,16 33,16 Z" id="Shape"></path>
+											</g>
+										</g>
+									</g>
+								</g>
+							</svg>
+						</span>
+						Support
+					</a>
+				</div>
+		</div>
+		<div class="big-part">
+			<div class="big-part-f">
+				<h1>Order Form</h1>
+			</div>
+			<div class="order-form mt-5"> 
+				<ul class="nav nav-tabs ul-tabs justify-content-center" id="myTab" role="tablist">
+					<li class="nav-item">
+						<a class="nav-link a-tabs active" id="buy-tab" data-toggle="tab" href="#buy" role="tab" aria-controls="home" aria-selected="true">Buy</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link a-tabs" id="sell-tab" data-toggle="tab" href="#sell" role="tab" aria-controls="profile" aria-selected="false">Sell</a>
+					</li>
+				</ul>
+				<div class="tab-content mt-4" id="myTabContent">
+					<div class="tab-pane fade show tab-first-order active" id="buy" role="tabpanel" aria-labelledby="buy-tab">
+						<p id="RequiredFields" class="errorDescription">*Required field<span id="fieldS" style="display: none">s</span></p>
+						<p id="NumberikRequiredFields" class="errorDescription">*This field<span id="NumbericfieldS" style="display: none">s</span> must be numberic</p>
+					
+						<div id="CompanyNameBlock">
+							<label for="CompanyName">Company/Ticker</label>
+							<input id="CompanyName" type="text" class="full-w-inp" placeholder="Company name">
+							<div class="simplebarCompanys" id="CompanyNameList">
+								<svg width="18px" height="10px" viewBox="0 0 18 9" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+													<!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+													<title>outline-arrow_drop_down-24px</title>
+													<desc>Created with Sketch.</desc>
+													<defs></defs>
+													<g id="Design" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+														<g id="Dashboard" transform="translate(-1250.000000, -39.000000)">
+															<g id="Upper-navigation" transform="translate(-1.000000, -1.000000)">
+																<g id="Profile" transform="translate(1240.000000, 12.000000)">
+																	<g id="outline-arrow_drop_down-24px" transform="translate(0.000000, 12.000000)">
+																		<g id="Outline_1_">
+																			<polygon id="Shape" points="0 0 40 0 40 40 0 40"></polygon>
+																			<polygon id="Shape" fill="red" fill-rule="nonzero" points="11.6666667 16.6666667 20 25 28.3333333 16.6666667"></polygon>
+																		</g>
+																	</g>
+																</g>
+															</g>
+														</g>
+													</g>
+												</svg>
+												<div id="CompanyNameListBlock"></div>
+							</div>
+						</div>
+					<div class="tr-inp-bl">
+						<div class="frst-tr-bl" id="LimitPriceBlock">
+							<label class="obsh-inp" for="LimitPrice">Limit Price</label>
+							<input type="text" id="LimitPrice" placeholder="0.00">
+							<span class="usd-bl">USD</span>
+						</div>
+						<div class="scnd-tr-bl" id="NumberOfSharesBlock">
+							<label class="obsh-inp" for="first-input-orderform-js">Number of shares</label>
+							<input id="first-input-orderform-js" 
+							onkeydown="firstinputcl(this, document.getElementById('second-input-orderform-js'))" 
+							onkeyup="firstinputcl(this, document.getElementById('second-input-orderform-js'))" 
+							onfocus="firstonfocus(this, document.getElementById('second-input-orderform-js'))" 
+							onblur="firstonblur(this, document.getElementById('second-input-orderform-js'))" 
+							type="text" placeholder="Max">
+							<input id="second-input-orderform-js" onfocus="secondinputcl(document.getElementById('first-input-orderform-js')), this" class="sm-inp" type="text" placeholder="0.00">
+						</div>
+						<div class="thrd-tr-bl">
+							<label class="obsh-inp" for="">Total (USD)</label>
+							<input id="TotalUSD" disabled type="text" placeholder="0.0000000000">
+						</div>
+					</div>
+				   <div class="btn-sect-order d-flex justify-content-center mt-5">
+						<input type="submit" id="PlaceOrder" value="Place order">
+					</div>
+					</div>
+					<div class="tab-pane fade tab-first-order" id="sell" role="tabpanel" aria-labelledby="sell-tab">
+							<div class="tab-pane fade show tab-first-order active" id="buy" role="tabpanel" aria-labelledby="buy-tab">
+									<p id="SellRequiredFields" class="errorDescription">*Required field<span id="SellfieldS" style="display: none">s</span></p>
+									<p id="SellNumberikRequiredFields" class="errorDescription">*This field<span id="SellNumbericfieldS" style="display: none">s</span> must be numberic</p>
+					
+									<div class="charts-lab-inp-bl charts-for-arrow w-300" id="SellOrderCompanyBlock">
+											<input id="SellOrderCompany" type="text" value="Select a company" class="select-input ord-inp-select" disabled>
+											<div class="select-block">
+												<div id="myElements" class="simplebar">
+													<ul id="SellCompanyLists">            
+													</ul>
+												</div>
+											</div>
+											</div>
+								<div class="tr-inp-bl">
+									<div class="frst-tr-bl" id="SellOrderLimitPriceBlock">
+										<label class="obsh-inp" for="SellOrderLimitPrice">Limit Price</label>
+										<input type="text" id="SellOrderLimitPrice" placeholder="0.00">
+										<span class="usd-bl">USD</span>
+									</div>
+									<div class="scnd-tr-bl" id="SellNumberOfSharesBlock">
+										<label class="obsh-inp" for="first-input-orderform-js1">Number of shares</label>
+										<input id="first-input-orderform-js1" 
+										onkeydown="firstinputcl(this, document.getElementById('second-input-orderform-js1'))" 
+										onkeyup="firstinputcl(this, document.getElementById('second-input-orderform-js1'))" 
+										onfocus="firstonfocus(this, document.getElementById('second-input-orderform-js1'))" 
+										onblur="firstonblur(this, document.getElementById('second-input-orderform-js1'))" 
+										type="text" placeholder="Max">
+										<input id="second-input-orderform-js1" onfocus="secondinputcl(document.getElementById('first-input-orderform-js1')), this" class="sm-inp" type="text" placeholder="0.00">
+									</div>
+									<div class="thrd-tr-bl" id="SellTotalUSDBlock">
+										<label class="obsh-inp" for="SellTotalUSD">Total (USD)</label>
+										<input type="text" disabled id="SellTotalUSD" placeholder="0.0000000000">
+									</div>
+								</div>
+							   <div class="btn-sect-order d-flex justify-content-center mt-5">
+									<input type="submit" id="SellORders" value="Place order">
+								</div>  
+					</div>
+				</div>
+			</div>
+		</div>
+		
+	</div>
+	
+</body>
+</html>

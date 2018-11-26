@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Login Page</title>
+	<link rel="stylesheet" href="assets/css/bootstrap-4.1.3.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<link rel="stylesheet" href="assets/css/style.css">
+
+	<script src="assets/js/incs/modules/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="assets/js/incs/modules/popper-1.14.3.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+	<script src="assets/js/incs/modules/bootstrap-4.1.3.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+	<script src="assets/js/incs/modules/recaptcha-api.js"></script>
+	
+	<script src="assets/js/incs/config.js"></script>
+	<script src="assets/js/incs/functions.js"></script>
+	<script src="assets/js/incs/requestss.js"></script>
+
+	<script src="assets/js/pages/index.js"></script>
+	
+
+
+</head>
+<body>
+	<!-- Header Secton -->
+
+	<!-- Header section End -->
+	<!-- Main page sect -->
+<div class="container-fluid main-p0">
+	<div class="row">
+		<div class="col-lg-6 col-md-6 cont-sect-main d-flex justify-content-center align-items-center">
+			<div class="first-part-of-main">
+				<a href="charts.html"><img class="log-img-s" src="assets/media/images/log0.png" alt=""></a>
+				<p id="LoginErrorBlock" class="errorDescription" style="display: none">Invalid Username or Password</p>
+
+				<div>
+					<label for="username">
+						Email
+					</label>
+					<div class="svg-part" id="UserNameBlock">
+						<input id="username" type="text" placeholder="Username">
+						<svg id="loginSucess" style="display: none" width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+							<!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+							<desc>Created with Sketch.</desc>
+							<defs>
+								<rect id="path-1" x="0" y="0" width="28" height="28"></rect>
+								<path d="M14,2.33333333 C20.44,2.33333333 25.6666667,7.56 25.6666667,14 C25.6666667,20.44 20.44,25.6666667 14,25.6666667 C7.56,25.6666667 2.33333333,20.44 2.33333333,14 C2.33333333,7.56 7.56,2.33333333 14,2.33333333 Z M12.3145373,15.7235443 C10.9632245,14.3604612 10.2849478,13.6764262 10.2797072,13.6714394 C9.79480898,13.2100236 9.02230969,13.2235065 8.55428176,13.7015542 L8.50906323,13.7477408 C8.04972385,14.2169139 8.05294989,14.9613964 8.51633853,15.4266833 L12.3145373,19.25 L19.4836615,12.0228317 C19.9498906,11.5546928 19.9498906,10.8046603 19.4836615,10.3365214 C19.4367036,10.2894433 19.4113404,10.2640844 19.4075717,10.2604447 C18.9259711,9.79532021 18.1530956,9.80316108 17.6813058,10.2779577 L12.3145373,15.7235443 Z" id="path-3"></path>
+							</defs>
+							<g id="Design" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+								<g id="LogIn" transform="translate(-562.000000, -374.000000)">
+									<g id="Username" transform="translate(122.000000, 334.000000)">
+										<g id="⌘Input" transform="translate(0.000000, 24.000000)">
+											<g id="Icon-/-Check-circle" transform="translate(438.000000, 14.000000)">
+												<mask id="mask-2" fill="white">
+													<use xlink:href="#path-1"></use>
+												</mask>
+												<g id="Container" fill-rule="nonzero"></g>
+												<mask id="mask-4" fill="white">
+													<use xlink:href="#path-3"></use>
+												</mask>
+												<g id="Check-Circle" fill-rule="nonzero"></g>
+												<g id="Style-/-Color-/-Green" mask="url(#mask-4)" fill="#58C144" fill-rule="evenodd">
+													<rect id="Container" x="0" y="0" width="28" height="28"></rect>
+												</g>
+											</g>
+										</g>
+									</g>
+								</g>
+							</g>
+						</svg>
+						<p id="UsernameError" class="errorDescription" style="display: none">*this field is required</p>
+					</div>
+					<div id="PasswordBlock">
+						<label class="pwd-c" for="password">Password</label>
+						<input id="password" type="password" placeholder="Password">
+						<p id="PasswordError" class="errorDescription" style="display: none">*this field is required</p>
+					</div>
+					<input id="loginButton" type="submit" value="Continue">
+					<a class="register-main-btn" href="sign-in.html">Request access</a>
+					<a href="forget-password.html" class="forget-a-index">Forgot your password?</a>
+				</div>
+			</div>
+		</div>
+		<div class="col-lg-6 main-img-sect col-md-6 d-lg-block d-md-block d-sm-none d-none"></div>
+	</div>
+</div>
+	<!-- Main page sect end -->
+	<!-- Footer -->
+
+	<!-- Footer ends -->
+	
+</body>
+</html>
