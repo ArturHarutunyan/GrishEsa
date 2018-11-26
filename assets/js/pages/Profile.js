@@ -41,9 +41,10 @@ function LoginIBBanckAccount(){
 			console.log(response);
 			console.log(responseCode);
 			if (responseCode==200) {
-				ShowNotification("<p>"+response.message+"</p>");
+				$("#exampleModalCenter").modal("hide");
+				ShowNotification("<p>Thank you for the registration<br>The registration process will be started shortly</p>");
 			}else{
-				ShowNotification("<p>something goese wrong, errorcode - "+responseCode+",<br>errorMessage - "+response.message+"</p>",true);
+				ShowNotification(response.message,true);
 
 			}
 		})
