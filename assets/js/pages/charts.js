@@ -595,34 +595,34 @@ GetChartData(function(response,responseCode){
 
 		"panels": [ {
 			"showCategoryAxis": false,
-			"title": "Data",
+			"title": "",
 			"percentHeight": 70,
 			"stockGraphs": [ {
 				"id": "g1",
-				"title": "Equity",
+				"title": "Equity $",
 				"lineThickness": 2,
 				"valueField": "StockMarketValue",
 				"useDataSetColors": false,
 
-				"balloonText": "[[title]]:<b>[[value]]$</b>",
-				"compareGraphBalloonText": "[[title]]:<b>[[value]]$</b>"
+				"balloonText": "[[title]]<b>[[value]]</b>",
+				"compareGraphBalloonText": "[[title]]<b>[[value]]</b>"
 			}, {
 				"id": "g2",
-				"title": "Cash",
+				"title": "Cash $",
 				"lineThickness": 2,
 				"valueField": "CashBalance",
 				"useDataSetColors": false,
 
-				"balloonText": "[[title]]:<b>[[value]]$</b>",
-				"compareGraphBalloonText": "[[title]]:<b>[[value]]$</b>"
+				"balloonText": "[[title]]<b>[[value]]</b>",
+				"compareGraphBalloonText": "[[title]]<b>[[value]]</b>"
 			}, {
 				"id": "g3",
-				"title": "Total Account Value",
+				"title": "Total Account Value $",
 				"lineThickness": 2,
 				"valueField": "TotalAccountValue",
 				"useDataSetColors": false,
-				"balloonText": "[[title]]:<b>[[value]]$</b>",
-				"compareGraphBalloonText": "[[title]]:<b>[[value]]$</b>"
+				"balloonText": "[[title]]<b>[[value]]</b>",
+				"compareGraphBalloonText": "[[title]]<b>[[value]]</b>"
 			}, {
 				"id": "g4",
 				"title": "Trades",
@@ -631,8 +631,8 @@ GetChartData(function(response,responseCode){
 				"useDataSetColors": false,
 				"hidden":true,
 
-				"balloonText": "[[title]]:<b>[[value]]$</b>",
-				"compareGraphBalloonText": "[[title]]:<b>[[value]]</b>"
+				"balloonText": "[[title]]<b>[[value]]</b>",
+				"compareGraphBalloonText": "[[title]]<b>[[value]]</b>"
 			}],
 			"stockLegend": {
 				"periodValueTextComparing": "[[percents.value.close]]",
